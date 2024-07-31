@@ -1,16 +1,19 @@
 // 카드 더미 데이터
 
-const CardDummy = [
+export const CardDummy = [
   {
     cardId: 1,
+    date: "2027/07/21",
     name: "woori travel",
   },
   {
     cardId: 2,
+    date: "2025/05/01",
     name: "woori naver",
   },
   {
     cardId: 3,
+    date: "2024/07/31",
     name: "woori check",
   },
 ];
