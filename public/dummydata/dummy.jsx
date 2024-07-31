@@ -1,21 +1,24 @@
 // 카드 더미 데이터
 
-const CardDummy = [
+export const CardDummy = [
   {
     cardId: 1,
     name: "woori travel",
+    image: "/image/card_1.png",
   },
   {
     cardId: 2,
     name: "woori naver",
+    image: "/image/card_2.png",
   },
   {
     cardId: 3,
     name: "woori check",
+    image: "/image/card_3.png",
   },
 ];
 
-const HistoryDummy = [
+export const HistoryDummy = [
   // 이용내역 더미 데이터 -> 카드ID, 사용처, 결제금액, 날짜, 카테고리,
   {
     cardId: 1,
@@ -121,5 +124,18 @@ const HistoryDummy = [
     cost: "27,000",
     date: "2024.07.25",
     category: "living",
+  },
+];
+
+export const AccountDummy = [
+  {
+    accountNumber: "1002-111-111111",
+    balance: "750,000",
+    state: "출금계좌",
+  },
+  {
+    accountNumber: "1002-222-222222",
+    balance: "1,350,000",
+    state: "적금계좌",
   },
 ];
