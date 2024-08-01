@@ -1,28 +1,94 @@
-/* App.css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    overflow-x: hidden;
-  }
-  
-  #root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 20px; /* Add padding-top to avoid overlap with header */
-    padding-bottom: 16px; /* Add padding-bottom to avoid overlap with footer */
-  }
-  
+/* Header styling */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  background-color: #0070f3; 
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure header is on top */
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  top: 5rem; /* Positioned right below the header */
+  left: 0;
+  background-color: #f4f4f4;
+  z-index: 999; /* Ensure button container is on top */
+  padding: 0.5rem 0; /* Add some padding to the container */
+}
+
+/* Main content styling */
+.body {
+  background-color: #f4f4f4;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex: 1;
+  padding-top: 7rem; /* Account for header and button container height */
+  padding-bottom: 4rem; /* pb-16 */
+}
+
+/* Footer styling */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  background-color: #0070f3; /* bg-gray-200 */
+  position: fixed;
+  color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Button styling */
+.button {
+  padding: 0.625rem 1.25rem; /* py-2.5 px-5 */
+  margin-right: 0.5rem; /* me-2 */
+  margin-bottom: 0.5rem; /* mb-2 */
+  font-size: 0.875rem; /* text-sm */
+  font-weight: 500; /* font-medium */
+  color: #1f2937; /* text-gray-900 */
+  background-color: #ffffff; /* bg-white */
+  border: 1px solid #e5e7eb; /* border-gray-200 */
+  border-radius: 0.5rem; /* rounded-lg */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+  color: #1d4ed8; /* hover:text-blue-700 */
+}
+
+.button:focus {
+  outline: none; /* focus:outline-none */
+  z-index: 10; /* focus:z-10 */
+  box-shadow: 0 0 0 4px #d1d5db; /* focus:ring-4 focus:ring-gray-100 */
+}
+
+/* Dark mode styles */
+.button.dark {
+  background-color: #1f2937; /* dark:bg-gray-800 */
+  color: #9ca3af; /* dark:text-gray-400 */
+  border-color: #374151; /* dark:border-gray-600 */
+}
+
+.button.dark:hover {
+  color: #ffffff; /* dark:hover:text-white */
+  background-color: #374151; /* dark:hover:bg-gray-700 */
+}

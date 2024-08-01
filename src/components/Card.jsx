@@ -1,10 +1,11 @@
 import React from "react";
+import "./Card.css";
 
 const Card = (card) => {
   const imageUrl = `/image/card_${card.id}.png`;
   return (
-    <div className="flex justify-center items-center space-x-4 overflow-x-auto py-4">
-      <img src={imageUrl} className="w-40 h-60" />
+    <div className="card-container">
+      <img src={imageUrl} className="card-image" />
     </div>
   );
 };
