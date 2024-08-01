@@ -5,16 +5,19 @@ export const CardDummy = [
     cardId: 1,
     date: "2027/07/21",
     name: "woori travel",
+    image: "/image/card_1.png",
   },
   {
     cardId: 2,
     date: "2025/05/01",
     name: "woori naver",
+    image: "/image/card_2.png",
   },
   {
     cardId: 3,
     date: "2024/07/31",
     name: "woori check",
+    image: "/image/card_3.png",
   },
 ];
 
@@ -140,4 +143,10 @@ export const HistoryDummy = [
     category: "living",
     name: "woori check",
   },
+];
+
+export const dummyAcount = [
+  { name: "Woori 저축 예금", balance: 48888, number: "123-245587-00" },
+  { name: "Woori 자유 입출금", balance: 1050000, number: "785-12057-04" },
+  { name: "Woori 나라사랑", balance: 32000, number: "579-55317-79" },
 ];
