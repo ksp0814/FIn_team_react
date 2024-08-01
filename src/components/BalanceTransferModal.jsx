@@ -5,6 +5,7 @@ const BalanceTransferModal = ({
   isOpen,
   onClose,
   accounts = [],
+  account,
   onTransfer,
 }) => {
   const [selectedAccount, setSelectedAccount] = useState(accounts[0] || null);
@@ -15,6 +16,9 @@ const BalanceTransferModal = ({
   const handleTransfer = () => {
     if (selectedAccount && amount) {
       onTransfer(selectedAccount, amount);
+      console.log(amount);
+      console.log(account.balance);
+
       onClose();
     } else {
       alert("계좌와 금액을 입력하세요.");
@@ -29,7 +33,7 @@ const BalanceTransferModal = ({
         </button>
         <h2>잔액 옮기기</h2>
         <div>
-          <label htmlFor="account-select">계좌 선택:</label>
+          <label htmlFor="account-select">계좌 선택</label>
           <select
             id="account-select"
             value={selectedAccount ? selectedAccount.number : ""}
@@ -51,7 +55,7 @@ const BalanceTransferModal = ({
           </select>
         </div>
         <div>
-          <label htmlFor="amount">금액:</label>
+          <label htmlFor="amount">금액</label>
           <input
             id="amount"
             type="number"
@@ -61,7 +65,7 @@ const BalanceTransferModal = ({
         </div>
         <div className="modal-buttons">
           <button onClick={handleTransfer} className="modal-transfer">
-            옮기기
+            확인
           </button>
           <button onClick={onClose} className="modal-cancel">
             취소

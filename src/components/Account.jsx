@@ -44,6 +44,7 @@ const Account = ({ account, allAccounts }) => {
         isOpen={isModalOpen}
         onClose={() => setModalOpen(false)}
         accounts={otherAccounts}
+        account={account}
         onTransfer={handleTransfer}
       />
     </div>
