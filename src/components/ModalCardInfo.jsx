@@ -19,7 +19,7 @@ const ModalCardInfo = ({ cardId }) => {
   cardTransactions.sort((a, b) => {
     if (sortOption === "cost") {
       return (
-        parseInt(a.cost.replace(/,/g, "")) - parseInt(b.cost.replace(/,/g, ""))
+        parseInt(b.cost.replace(/,/g, "")) - parseInt(a.cost.replace(/,/g, ""))
       );
     } else if (sortOption === "date") {
       return new Date(b.date) - new Date(a.date);
