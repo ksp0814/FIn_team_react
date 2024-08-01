@@ -41,6 +41,13 @@ const App = () => {
           <button
             onClick={cardbuttonHandler}
             type="button"
+            style={{
+              marginTop: "20px",
+              padding: "15px 30px", // 패딩을 조정하여 버튼 크기 증가
+              fontSize: "18px", // 폰트 크기를 조정하여 텍스트 크기 증가
+              width: "200px", // 버튼의 너비를 조정
+              height: "100px", // 버튼의 높이를 조정
+            }}
             className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
           >
             카드
@@ -48,6 +55,13 @@ const App = () => {
           <button
             onClick={accountbuttonHandler}
             type="button"
+            style={{
+              marginTop: "20px",
+              padding: "15px 30px", // 패딩을 조정하여 버튼 크기 증가
+              fontSize: "18px", // 폰트 크기를 조정하여 텍스트 크기 증가
+              width: "200px", // 버튼의 너비를 조정
+              height: "100px", // 버튼의 높이를 조정
+            }}
             className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
           >
             계좌
