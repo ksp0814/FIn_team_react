@@ -3,16 +3,19 @@
 export const CardDummy = [
   {
     cardId: 1,
+    date: "2027/07/21",
     name: "woori travel",
     image: "/image/card_1.png",
   },
   {
     cardId: 2,
+    date: "2025/05/01",
     name: "woori naver",
     image: "/image/card_2.png",
   },
   {
     cardId: 3,
+    date: "2024/07/31",
     name: "woori check",
     image: "/image/card_3.png",
   },
@@ -26,6 +29,7 @@ export const HistoryDummy = [
     cost: "30,000",
     date: "2024.07.14",
     category: "food",
+    name: "woori travel",
   },
   {
     cardId: 1,
@@ -33,6 +37,7 @@ export const HistoryDummy = [
     cost: "7,500",
     date: "2024.07.12",
     category: "living",
+    name: "woori travel",
   },
   {
     cardId: 1,
@@ -40,6 +45,7 @@ export const HistoryDummy = [
     cost: "33,000",
     date: "2024.07.17",
     category: "food",
+    name: "woori travel",
   },
   {
     cardId: 1,
@@ -47,6 +53,7 @@ export const HistoryDummy = [
     cost: "30,000",
     date: "2024.07.13",
     category: "play",
+    name: "woori travel",
   },
   {
     cardId: 1,
@@ -54,6 +61,7 @@ export const HistoryDummy = [
     cost: "50,000",
     date: "2024.07.19",
     category: "car",
+    name: "woori travel",
   },
   {
     cardId: 2,
@@ -61,6 +69,7 @@ export const HistoryDummy = [
     cost: "22,000",
     date: "2024.07.06",
     category: "food",
+    name: "woori naver",
   },
   {
     cardId: 2,
@@ -68,6 +77,7 @@ export const HistoryDummy = [
     cost: "4,500",
     date: "2024.07.06",
     category: "food",
+    name: "woori naver",
   },
   {
     cardId: 2,
@@ -75,6 +85,7 @@ export const HistoryDummy = [
     cost: "125,000",
     date: "2024.07.09",
     category: "living",
+    name: "woori naver",
   },
   {
     cardId: 2,
@@ -82,13 +93,15 @@ export const HistoryDummy = [
     cost: "47,000",
     date: "2024.07.07",
     category: "shopping",
+    name: "woori naver",
   },
   {
     cardId: 2,
     use: "이마트",
-    cost: "125,000",
-    date: "2024.07.09",
+    cost: "87,000",
+    date: "2024.07.19",
     category: "living",
+    name: "woori naver",
   },
   {
     cardId: 3,
@@ -96,6 +109,7 @@ export const HistoryDummy = [
     cost: "30,000",
     date: "2024.07.11",
     category: "play",
+    name: "woori check",
   },
   {
     cardId: 3,
@@ -103,6 +117,7 @@ export const HistoryDummy = [
     cost: "50,000",
     date: "2024.07.04",
     category: "play",
+    name: "woori check",
   },
   {
     cardId: 3,
@@ -110,6 +125,7 @@ export const HistoryDummy = [
     cost: "7,300",
     date: "2024.07.21",
     category: "food",
+    name: "woori check",
   },
   {
     cardId: 3,
@@ -117,6 +133,7 @@ export const HistoryDummy = [
     cost: "10,000",
     date: "2024.07.22",
     category: "play",
+    name: "woori check",
   },
   {
     cardId: 3,
@@ -124,6 +141,7 @@ export const HistoryDummy = [
     cost: "27,000",
     date: "2024.07.25",
     category: "living",
+    name: "woori check",
   },
 ];
 

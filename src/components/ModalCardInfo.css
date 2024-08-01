@@ -1,0 +1,35 @@
+/* ModalCardInfo.css */
+.modal-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select-container,
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.select-container select {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.checkbox-container label {
+  margin-right: 15px;
+}
+
+.checkbox-container input {
+  margin-right: 5px;
+}
