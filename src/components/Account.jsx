@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import BalanceTransferModal from "./BalanceTransferModal";
 import "./Account.css";
 
-const Account = ({ account, allAccounts }) => {
-  const [isModalOpen, setModalOpen] = React.useState(false);
+const Account = ({ account, allAccounts, setAccounts }) => {
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const copyToClipboard = () => {
     navigator.clipboard
@@ -17,11 +17,18 @@ const Account = ({ account, allAccounts }) => {
   };
 
   const handleTransfer = (targetAccount, amount) => {
-    // 잔액 옮기기 로직을 구현합니다
-    console.log(`옮길 계좌: ${targetAccount.name}, 금액: ${amount}`);
+    const updatedAccounts = allAccounts.map((acc) => {
+      if (acc.number === account.number) {
+        return { ...acc, balance: acc.balance - amount };
+      } else if (acc.number === targetAccount.number) {
+        return { ...acc, balance: acc.balance + amount };
+      }
+      return acc;
+    });
+
+    setAccounts(updatedAccounts);
   };
 
-  // 현재 계좌를 제외한 다른 계좌들만 필터링합니다
   const otherAccounts = allAccounts.filter(
     (acc) => acc.number !== account.number
   );

@@ -14,11 +14,15 @@ const BalanceTransferModal = ({
   if (!isOpen) return null;
 
   const handleTransfer = () => {
-    if (selectedAccount && amount) {
-      onTransfer(selectedAccount, amount);
-      console.log(amount);
-      console.log(account.balance);
+    const transferAmount = parseFloat(amount);
 
+    if (selectedAccount && transferAmount && transferAmount > 0) {
+      if (transferAmount > account.balance) {
+        alert("잔액이 부족합니다.");
+        return;
+      }
+
+      onTransfer(selectedAccount, transferAmount);
       onClose();
     } else {
       alert("계좌와 금액을 입력하세요.");
@@ -33,7 +37,7 @@ const BalanceTransferModal = ({
         </button>
         <h2>잔액 옮기기</h2>
         <div>
-          <label htmlFor="account-select">계좌 선택</label>
+          <label htmlFor="account-select">계좌 선택:</label>
           <select
             id="account-select"
             value={selectedAccount ? selectedAccount.number : ""}
@@ -55,7 +59,7 @@ const BalanceTransferModal = ({
           </select>
         </div>
         <div>
-          <label htmlFor="amount">금액</label>
+          <label htmlFor="amount">금액:</label>
           <input
             id="amount"
             type="number"

@@ -33,10 +33,10 @@ const App = () => {
           계좌
         </button>
       </div>
-      <body className="body">
+      <div className="body">
         {showCardSelect && <CardSelect />}
         {showAccount && <AccountSelect />}
-      </body>
+      </div>
       <footer className="footer">
         <p>&copy; 2024 우리 FISA 은행. All rights reserved.</p>
       </footer>
