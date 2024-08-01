@@ -109,6 +109,16 @@ const ModalCardInfo = ({ cardId }) => {
             />{" "}
             자동차
           </label>
+          <label>
+            <input
+              type="checkbox"
+              name="shopping"
+              value="shopping"
+              checked={selectCategories.includes("shopping")}
+              onChange={handleCheckboxChange}
+            />{" "}
+            쇼핑
+          </label>
         </div>
       </div>
       <CardInfo transactions={filteredAndSortedTransactions} />{" "}

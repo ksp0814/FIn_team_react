@@ -145,15 +145,8 @@ export const HistoryDummy = [
   },
 ];
 
-export const AccountDummy = [
-  {
-    accountNumber: "1002-111-111111",
-    balance: "750,000",
-    state: "출금계좌",
-  },
-  {
-    accountNumber: "1002-222-222222",
-    balance: "1,350,000",
-    state: "적금계좌",
-  },
+export const dummyAcount = [
+  { name: "Woori 저축 예금", balance: 48888, number: "123-245587-00" },
+  { name: "Woori 자유 입출금", balance: 1050000, number: "785-12057-04" },
+  { name: "Woori 나라사랑", balance: 32000, number: "579-55317-79" },
 ];
