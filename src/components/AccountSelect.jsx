@@ -16,7 +16,11 @@ const AccountSelect = () => {
       </div>
 
       {dummyAcount.map((account) => (
-        <Account account={account} key={account.number} />
+        <Account
+          account={account}
+          key={account.number}
+          allAccounts={dummyAcount}
+        />
       ))}
     </div>
   );

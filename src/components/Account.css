@@ -95,3 +95,12 @@
 .toggle-button:hover {
   background-color: #f3f4f6; /* 버튼에 마우스 오버 시 배경색 */
 }
+.transfer-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+}
