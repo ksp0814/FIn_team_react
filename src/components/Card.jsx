@@ -1,10 +1,15 @@
 import React from "react";
 
-const Card = (card) => {
-  const imageUrl = `/image/card_${card.id}.png`;
+const Card = ({ id, name, onClick }) => {
+  const imageUrl = `/image/card_${id}.png`;
+
   return (
-    <div className="flex justify-center items-center space-x-4 overflow-x-auto py-4">
-      <img src={imageUrl} className="w-40 h-60" />
+    <div
+      className="flex flex-col items-center space-y-2 py-4 cursor-pointer"
+      onClick={() => onClick(id)} // 클릭 시 id를 전달하여 onClick 함수 호출
+    >
+      <img src={imageUrl} alt={name} className="w-40 h-60" />
+      <p className="text-center">{name}</p>
     </div>
   );
 };

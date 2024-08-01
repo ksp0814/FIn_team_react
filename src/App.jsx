@@ -21,6 +21,12 @@ const App = () => {
     setShowCardSelect(false);
   };
 
+  // 모달 생성 함수
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <DefaultLayout>
       <header className="flex flex-col items-center justify-center h-20 bg-gray-200 fixed top-0 left-0 w-full">

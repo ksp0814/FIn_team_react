@@ -1,0 +1,45 @@
+.card-info-container {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  width: 500px;
+  gap: 10px; /* 박스 사이의 간격 */
+  padding: 10px; /* 컨테이너 내부 여백 */
+  overflow-y: auto; /* 세로 스크롤 허용 */
+}
+
+.card-info-box {
+  border: 1px solid #ddd; /* 박스 테두리 색상 */
+  border-radius: 8px; /* 박스 모서리 둥글게 */
+  padding: 15px; /* 박스 내부 여백 */
+  background-color: #fff; /* 박스 배경 색상 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 박스 그림자 */
+  width: 400px;
+  /* 박스 최대 너비 */
+  margin: auto; /* 가운데 정렬 */
+}
+
+.info-item {
+  margin-bottom: 10px; /* 각 항목 사이의 간격 */
+  font-size: 16px; /* 글자 크기 */
+}
+
+.info-item strong {
+  color: #333; /* 항목 제목 색상 */
+}
+
+.no-transactions {
+  text-align: center; /* 텍스트 중앙 정렬 */
+  color: #888; /* 텍스트 색상 */
+  font-size: 18px; /* 텍스트 크기 */
+}
+
+.info-left {
+  text-align: left; /* 왼쪽 정렬 */
+  flex: 1; /* 남은 공간을 차지 */
+}
+
+.info-right {
+  text-align: right; /* 오른쪽 정렬 */
+  flex: 1; /* 남은 공간을 차지 */
+}
