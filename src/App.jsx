@@ -31,11 +31,11 @@ const App = () => {
   // const [isModalOpen, setIsModalOpen] = useState(false);
 
   // const openModal = () => setIsModalOpen(true);
-  // const closeModal = () => setIsModalOpen(false);
+  // const closeModal = () => setIsModalOpen(false)
 
   return (
     <DefaultLayout>
-      <header className="flex flex-col items-center justify-center h-20 bg-gray-200 fixed top-0 left-0 w-full">
+      <header className="flex flex-col items-center justify-center h-20 bg-gray-200 fixed top-0 left-0 w-full z-50">
         <h1>우리 FISA 은행</h1>
       </header>
 
@@ -69,7 +69,6 @@ const App = () => {
               padding: "15px 30px", // 패딩을 조정하여 버튼 크기 증가
               fontSize: "18px", // 폰트 크기를 조정하여 텍스트 크기 증가
               width: "100px", // 버튼의 너비를 조정
-              height: "50px", // 버튼의 높이를 조정
             }}
             className="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
           >

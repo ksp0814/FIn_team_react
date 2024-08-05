@@ -53,6 +53,7 @@
 }
 
 .total-balance {
+  z-index: 1; /* 헤더보다 낮은 z-index 값 설정 */
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* 왼쪽 정렬 */
@@ -64,6 +65,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
   position: relative; /* 토글 버튼을 위치시키기 위한 relative 설정 */
 }
+
 
 /* 총 잔액 텍스트 스타일링 */
 .total-balance p:first-of-type {
